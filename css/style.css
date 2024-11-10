@@ -1,0 +1,65 @@
+body {
+    background-color: #ffe4c4;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    nav {
+        background-color: #e9967a;
+        border: 1px solid white;
+    }
+    
+    .menu {
+        padding: 10px;
+        list-style: none; /* убирает маркеры списка */
+    }
+    
+    .menu li {
+        margin: 10px 0; 
+    
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu a:hover {
+        text-decoration: underline; 
+    }
+
+    .menu img {
+        height: 75px;   
+        width: auto; 
+    }
+
+    h1 {
+        text-align: center;
+        color: #00008b; 
+        padding: 1px; /* Поля вокруг текста */
+    }
+    
+    p {
+        text-align: left;
+        color: black; 
+        padding: 5px 5px; 
+        margin-top: 0; 
+    }
+    
+    h2 {
+        text-align: center;
+        color: #00008b;
+        padding: 5px 10px; 
+    }	
+    
+    .social-icon {
+        display: inline-block;    /* Дисплей для центровки иконки */
+        margin: 5px;             /* Отступы вокруг иконки */
+    }
+    
+    .social-icon img {
+        width: 50px;             /* Ширина иконки */
+        height: auto;            
+    }
