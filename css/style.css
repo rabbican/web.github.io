@@ -12,12 +12,15 @@ body {
     }
     
     .menu {
+        display: flex;
+        justify-content: center;	/* элементы становятся по горизонтали по центру */
+	    flex-direction: row;
         padding: 10px;
         list-style: none; /* убирает маркеры списка */
     }
     
     .menu li {
-        margin: 10px 0; 
+        margin: 0 25px ; 
     
     }
     
