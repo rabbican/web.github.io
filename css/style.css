@@ -1,41 +1,68 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v29-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
 body {
     background-color: #ffe4c4;
+    margin: 0; /* Убираем отступы тела */
+    padding: 0;
+}
+
+    * {
+        box-sizing: border-box; /* Учитываем границы и внутренние отступы */
     }
-    
+
     header {
         padding: 1rem;
     }
-    
+
     nav {
         background-color: #e9967a;
-        border: 1px solid white;
+        border: 2px solid white;
+        display: flex;
+        align-items: center; /* Вертикальное выравнивание по центру */
+        justify-content: center; /* Центрируем элементы внутри nav */
     }
-    
+
     .menu {
         display: flex;
-        justify-content: center;	/* элементы становятся по горизонтали по центру */
-	    flex-direction: row;
-        padding: 10px;
-        list-style: none; /* убирает маркеры списка */
+        flex-direction: row;
+        justify-content: center; /* Центрируем пункты меню */
+        align-items: center; /* Вертикально центрируем пункты меню */
+        padding: 0; /* Убираем паддинги */
+        list-style: none; /* Убирает маркеры списка */
+        margin: 0; /* Убираем отступы у списка */
+        flex-grow: 1; /* Позволяем меню занимать доступное пространство */
     }
-    
+
     .menu li {
-        margin: 0 25px ; 
-    
+        margin: 0 25px; 
     }
-    
+
     .menu a {
         text-decoration: none;
         color: black;
     }
-    
+
     .menu a:hover {
         text-decoration: underline; 
     }
 
-    .menu img {
+    nav img {
         height: 75px;   
-        width: auto; 
+        width: auto;  
+        margin-top: 10px; /* Отступ сверху */
+        margin-bottom: 10px; /* Отступ снизу */
+    }
+
+    .menu a.active {
+        text-decoration: underline; /* Подчеркнуто для активного элемента */
+        font-weight: bold;
     }
 
     h1 {
@@ -65,4 +92,18 @@ body {
     .social-icon img {
         width: 50px;             /* Ширина иконки */
         height: auto;            
+    }
+
+    .content-wrapper {
+        max-width: 100%; /* Максимальная ширина обертки */
+        margin: 0 auto; /* Центрирование обертки */
+    }
+
+    .content-block-1 {
+        min-height: 250px; /* Минимальная высота блока */
+        width: 100%; /* Ширина блока 100% по родителю */
+        margin: auto; /* Авто отступы слева и справа */
+        background-color: #e9967a; /* Цвет фона блока */
+        padding: 15px; /* Внутренний отступ */
+        margin-bottom: 20px; /* Отступ между блоками */
     }
