@@ -14,10 +14,10 @@
             </a>
             
             <ul class="menu">
-                <li><a href="index.html" class="active">О себе</a></li>
+                <li><a href="index.html">О себе</a></li>
                 <li><a href="summary.html">Резюме</a></li>
                 <li><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html">Компетенции</a></li>
+                <li><a href="#comp">Компетенции</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
@@ -27,39 +27,99 @@
     
     
 
-
-
-
     <main>
         <p>На данном персональном сайте есть главная страница обо мне, мое резюме, портфолио, компетенции и контакты. Я всегда открыта для сотрудничества и новых возможностей. Прошу вас ознакомиться с содержимым данного сайта. Буду рада вашим отзывам и вопросам! </p>
+        
             <div class="content-wrapper">
                 <div class="content-block-1">
-                    <h2>Блок 1</h2>
-                    <p>Содержимое первого блока.</p>
+                    <h2>Обо мне</h2>
+                    <p>Меня зовут Доменко Анжелика Вячеславовна, мне 19 лет. Я обучаюсь на 2-ом курсе в Государственный университет «Дубна» на направлении «Бизнес-информатика». На данный момент я сосредоточена на учёбе и развитии своих навыков в веб-дизайне и маркетинге. В свободное время увлекаюсь чтением, рисованием и танцами. Я трудолюбивая, целеустремленная и ответственная. Открыта новым возможностям и стремлюсь к профессиональному росту!</p>
+                
+                    <img src="images/me.JPG" alt="Моя фотография" class="photo">
                 </div>
-          
-            
+            </div>    
+            <h2 id="comp">Мои компетенции</h2>
+            <div class="content-block-2">
+                <table class="invisible-table">
+                    <tr>
+                        <td>
+                            <img class="small-photo" src="images/photoshop.png" alt="Фото 1">
+                            <p class="photo-caption">Adobe Photoshop</p>
+                        </td>
+                        <td>
+                            <img class="small-photo" src="images/lightroom.png" alt="Фото 2">
+                            <p class="photo-caption">Adobe Lightroom</p>
+                        </td>
+                        <td>
+                            <img class="small-photo" src="images/figma.png" alt="Фото 3">
+                            <p class="photo-caption">Figma</p>
+                        </td>
+                        <td>
+                            <img class="small-photo" src="images/visual.png" alt="Фото 4">
+                            <p class="photo-caption">Visual Studio Code</p>
+                        </td>
+                        <td>
+                            <img class="small-photo" src="images/pycharm.png" alt="Фото 5">
+                            <p class="photo-caption">Pycharm</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
+            <div class="content-block-1">
+                <h2>Услуги</h2>
+                <table class="invisible-table-2">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Ретуширование и корректировка фотографий</li>
+                                <li>Создание пресетов и шаблонов</li>
+                                <li>Анимация и создание GIF</li>
+                                <li>Подготовка изображений для печати</li>
+                                <li>Создание фотокниг</li>
+                                
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Тестирование вашего ПО</li>
+                                <li>Создание Web-сайтов</li>
+                                <li>Проектирование пользовательских интерфейсов</li>
+                                <li>Обучение по настройке среды разработки</li>
+                                <li>Создание логотипов для брендов</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-        
+            <h2>Мой опыт</h2>
+            <div class="content-block-4">   
+                <p class="p-4-block">Я выполняла коррекцию и ретушь фотографий на заказ, помогала с тестированием ПО, отвечала на технические вопросы по поводу настройки Visual Studio Code. </p>  
+                <form action="pages/portfolio.html">
+                    <button class="btn">Портфолио</button>
+                </form>
+            </div>
+    
     </main>
 
-    <footer>
-        <hr>
-        <div>
-            <a href="https://t.me/rabbican" target="_blank" class="social-icon">
-                <img src="images/telegram-logo.png" alt="Telegram" />
-            </a>
 
-            <a href="https://vk.com/anzhelichkaaaaaaa" target="_blank" class="social-icon">
-                <img src="images/vk-logo.png" alt="Vk" />
-            </a>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://t.me/rabbican" target="_blank" class="social-icon">
+                    <img src="images/telegram-logo.png" alt="Telegram" />
+                </a>
+    
+                <a href="https://vk.com/anzhelichkaaaaaaa" target="_blank" class="social-icon">
+                    <img src="images/vk-logo.png" alt="Vk" />
+                </a>
+            </div>
+            
+            <p>Сайт разработан Анжеликой Доменко. Все права защищены © 2024</p>
         </div>
-        
-        
-       
-        <p>Сайт разработан Анжеликой Доменко. Все права защищены © 2024</p>
     </footer>
+    
 
     </body>
     </html>

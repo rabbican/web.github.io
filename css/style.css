@@ -4,17 +4,17 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v29-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v29-cyrillic_latin-regular.woff2') format('woff2'); 
   }
 
 body {
     background-color: #ffe4c4;
-    margin: 0; /* Убираем отступы тела */
+    margin: 0; 
     padding: 0;
 }
 
     * {
-        box-sizing: border-box; /* Учитываем границы и внутренние отступы */
+        box-sizing: border-box; /* Учитывание границ и внутренние отступы */
     }
 
     header {
@@ -26,17 +26,17 @@ body {
         border: 2px solid white;
         display: flex;
         align-items: center; /* Вертикальное выравнивание по центру */
-        justify-content: center; /* Центрируем элементы внутри nav */
+        justify-content: center; 
     }
 
     .menu {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* Центрируем пункты меню */
-        align-items: center; /* Вертикально центрируем пункты меню */
-        padding: 0; /* Убираем паддинги */
-        list-style: none; /* Убирает маркеры списка */
-        margin: 0; /* Убираем отступы у списка */
+        justify-content: center; 
+        align-items: center; 
+        padding: 0; 
+        list-style: none; 
+        margin: 0; 
         flex-grow: 1; /* Позволяем меню занимать доступное пространство */
     }
 
@@ -56,19 +56,14 @@ body {
     nav img {
         height: 75px;   
         width: auto;  
-        margin-top: 10px; /* Отступ сверху */
-        margin-bottom: 10px; /* Отступ снизу */
-    }
-
-    .menu a.active {
-        text-decoration: underline; /* Подчеркнуто для активного элемента */
-        font-weight: bold;
+        margin-top: 10px; 
+        margin-bottom: 10px; 
     }
 
     h1 {
         text-align: center;
         color: #00008b; 
-        padding: 1px; /* Поля вокруг текста */
+        padding: 1px; 
     }
     
     p {
@@ -81,29 +76,160 @@ body {
     h2 {
         text-align: center;
         color: #00008b;
-        padding: 5px 10px; 
+        padding: 1px 5px; 
     }	
-    
-    .social-icon {
-        display: inline-block;    /* Дисплей для центровки иконки */
-        margin: 5px;             /* Отступы вокруг иконки */
-    }
-    
-    .social-icon img {
-        width: 50px;             /* Ширина иконки */
-        height: auto;            
-    }
 
     .content-wrapper {
-        max-width: 100%; /* Максимальная ширина обертки */
-        margin: 0 auto; /* Центрирование обертки */
+        max-width: 100%; 
+        margin: 0 auto; 
     }
 
     .content-block-1 {
-        min-height: 250px; /* Минимальная высота блока */
-        width: 100%; /* Ширина блока 100% по родителю */
-        margin: auto; /* Авто отступы слева и справа */
-        background-color: #e9967a; /* Цвет фона блока */
-        padding: 15px; /* Внутренний отступ */
+        display: flex;
+        align-items: center;
+        min-height: 250px; 
+        width: 100%; 
+        background-color: #e9967a; 
+        padding: 15px; 
+        margin: 0; 
         margin-bottom: 20px; /* Отступ между блоками */
     }
+
+  
+
+    .content-block-1 p {
+        margin: 0; 
+        padding: 0 300px 0 200px;
+        flex: 1;
+    }
+
+
+    .content-block-1 .photo {
+        max-width: 220px; 
+        height: auto;
+        margin-right: 15px; 
+        margin-left: -50px;
+    }
+
+    .content-block-2 {
+        display: flex; 
+        align-items: center; 
+        min-height: 250px; 
+        width: 100%; 
+        background-color: #ffe4c4; 
+        padding: 15px; 
+        margin: 0; 
+        margin-bottom: 20px; 
+    }
+    
+    .invisible-table {
+        width: 100%; 
+        border-collapse: collapse; /* нет отступов между ячейками */
+    }
+    
+    .invisible-table td {
+        text-align: center; 
+        vertical-align: top; /* Выравнивание содержимого по верхнему краю */
+        padding: 10px; 
+    }
+    
+    .small-photo {
+        max-width: 80px; 
+        height: auto; 
+        display: block; /* Переключение отображение на блочный, чтобы избежать дополнительных отступов */
+        margin: 0 auto; 
+    }
+    
+    .photo-caption {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 5px; 
+        font-size: 14px; 
+        color: #333; 
+    }
+
+
+    .invisible-table-2 {
+        width: 100%; 
+        border-collapse: collapse; /* Убираем отступы между ячейками */
+    }
+    
+    .invisible-table-2 td {
+        width: 50%; 
+        vertical-align: top; 
+        padding: 0 150px 0 200px; 
+    }
+    
+    .invisible-table-2 ul {
+        list-style-type: disc; /* маркеры вкл */
+        padding-left: 5px;
+        margin: 0;
+    }
+    
+    .invisible-table-2 ul > li {
+        margin-bottom: 10px; /* Отступ между элементами списка */
+    }
+
+    .content-block-4 {
+        display: flex; 
+        align-items: center; /* Вертикальное выравнивание элементов */
+        min-height: 250px; 
+        width: 100%; 
+        background-color: #ffe4c4; 
+        padding: 15px; 
+        margin: 0; 
+        margin-bottom: 20px; 
+        flex-direction: column; /* вертикальная компоновка */
+    }
+    
+    .p-4-block {
+        margin: 0; 
+        padding: 0 300px 0 200px; 
+    }
+    
+    .btn {
+        background-color: #e9967a; 
+        color: white; 
+        border-radius: 5px; /* Закругление углов */
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; /* Указатель при наведении */
+        transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+        margin-top: 50px; 
+    }
+    
+    .btn:hover {
+        background-color: #00008b; /* Изменение цвета при наведении */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Тень кнопки при наведении */
+    }
+
+    footer {
+        padding: 20px;
+        background-color: #e9967a; 
+    }
+    
+    .footer-content {
+        display: flex;           
+        align-items: center;    
+        justify-content: space-between; /* Размещение элементов с равными отступами */
+    }
+    
+    .social-icons {
+        display: flex;           
+    }
+    
+    .social-icon {
+        display: inline-block;    
+        margin: 5px;             
+    }
+    
+    .social-icon img {
+        width: 50px;            
+        height: auto;            
+    }
+    
+    .footer-content p {
+        margin: 0;               
+        padding-left: 10px;     
+    }
+    
