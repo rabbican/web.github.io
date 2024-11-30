@@ -19,6 +19,14 @@ body {
 
     header {
         padding: 1rem;
+        text-align: center;
+        background-image: url(../images/fon.jpg);
+        height: 275px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+
     }
 
     nav {
@@ -245,4 +253,45 @@ body {
         margin: 0;               
         font-size: 18px; 
     }
+    .table-summary {
+        width: 70%; /* Устанавливаем ширину таблицы на 70% */
+        margin: 0 auto 20px; /* Центрируем таблицу и добавляем отступ снизу в 20 пикселей */
+        border-collapse: collapse; /* Убираем пробелы между ячейками */
+    }
     
+    .table-summary th {
+        background-color: #e9967a; /* Цвет фона заголовка */
+        color: black; /* Цвет текста заголовка */
+        font-size: 20px; 
+        padding: 10px; /* Отступы внутри ячейки заголовка */
+        text-align: center; /* Выравнивание текста по центру */
+        border: 1px solid #59351F;
+    }
+    
+    .summary-row-odd {
+        background-color: #efccad; /* Цвет для нечетных строк */
+        color: black; /* Цвет текста */
+        font-size: 20px; 
+    }
+    
+    .summary-row-even {
+        background-color: #FDF4E3; /* Цвет для четных строк */
+        color: black; /* Цвет текста */
+        font-size: 20px; 
+    }
+    
+    .table-summary td {
+        padding: 10px; /* Отступы внутри ячейки */
+        text-align: center; /* Выравнивание текста по центру */
+        border: 1px solid #59351F;
+    }
+    
+    .summary-list {
+        margin: 0; /* Убираем отступы для маркированного списка */
+        padding-left: 0; /* Убираем отступ слева у маркированного списка */
+        list-style-position: inside; /* Задаем внутри позиции маркеров */
+    }
+ 
+    .table-summary td:nth-child(3) {
+    text-align: left; /* Выравнивание по центру для третьего столбца Он выбирает элемент, который является третьим дочерним элементом своего родителя (в данном случае, третью ячейку в каждой строке таблицы).*/
+}
