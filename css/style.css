@@ -319,7 +319,7 @@ body {
 
 .portfolio-image {
     height: 250px; /* Автоматическая высота для сохранения пропорций */
-    weight: auto;
+    width: auto;
     margin-right: 15px; /* Отступ справа от изображения */
 }
 
