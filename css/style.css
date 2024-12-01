@@ -92,6 +92,7 @@ body {
         text-align: center;
         color: #59351F;
         padding: 1px 5px; 
+        font-size: 24px;
     }	
 
     .content-wrapper {
@@ -294,4 +295,51 @@ body {
  
     .table-summary td:nth-child(3) {
     text-align: left; /* Выравнивание по центру для третьего столбца Он выбирает элемент, который является третьим дочерним элементом своего родителя (в данном случае, третью ячейку в каждой строке таблицы).*/
+}
+
+.portfolio-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto;; /* Центрируем контейнер на странице */
+    padding: 20px; /* Внутренние отступы для контейнера */
+    background-color: #FDF4E3;
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+.portfolio-block {
+    display: flex; /* Выравнивание элементов в строку */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 15px; /* Внутренние отступы для блока */
+    border-bottom: 1px solid #ddd; /* Нижняя граница между блоками */
+}
+
+.portfolio-block:last-child {
+    border-bottom: none; /* Убираем границу для последнего блока */
+}
+
+.portfolio-image {
+    height: 250px; /* Автоматическая высота для сохранения пропорций */
+    weight: auto;
+    margin-right: 15px; /* Отступ справа от изображения */
+}
+
+.portfolio-content {
+    flex-grow: 1; /* Позволяем содержимому занимать остальное пространство */
+}
+
+.portfolio-content h2 {
+    margin: 0 0 10px; /* Отступы для заголовка */
+    font-size: 24px; /* Размер шрифта заголовка */
+}
+
+.portfolio-content p {
+    margin: 0; /* Убираем отступы для параграфов */
+    font-size: 14px; 
+    color: #59351F; 
+    font-size: 20px;
+}
+
+/* Стиль для блока с изображением справа */
+.image-on-the-right {
+    flex-direction: row-reverse; /* Разворачиваем порядок для правой картинки */
 }
