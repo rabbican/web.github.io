@@ -11,6 +11,7 @@ body {
     background-color: #ffe4c4;
     margin: 0; 
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
     * {
@@ -200,6 +201,7 @@ body {
         margin: 0; 
         margin-bottom: 20px; 
         flex-direction: column; /* вертикальная компоновка */
+        text-align: center;
     }
     
     .p-4-block {
@@ -217,6 +219,7 @@ body {
         cursor: pointer; /* Указатель при наведении */
         transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход */
         margin-top: 50px; 
+        font-size: 20px;
     }
     
     .btn:hover {
@@ -377,5 +380,71 @@ body {
 
 .social-icon-for-contacts img {
     width: 50px;            
-    height: auto;            
+    height: auto;        
+}
+
+form {
+    background-color: transparent; /* Убираем белый фон для формы */
+    padding: 20px; /* Внутренние отступы */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+    margin-top: 20px; /* Отступ сверху от других элементов */
+    margin-bottom: 30px; /* Отступ снизу перед футером */
+    box-shadow: none; /* Убираем тень для формы */
+    width: 100%; /* Увеличиваем до 100% от родительского контейнера */
+    max-width: 500px; /* Максимальная ширина формы */
+    position: relative; /* Установка относительного позиционирования для элемента */
+}
+
+form::before {
+    content: ""; /* Псевдоэлемент для фона */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Расположение вверху формы */
+    left: 50%; /* Центрирование по горизонтали */
+    width: 100%; /* Ширина фона 100% формы */
+    height: 100%; /* Высота фона 100% формы */
+    background: #efccad; /* Полупрозрачный фон  */
+    box-shadow: 0 4px 10px #e9967a; /* Тень для блока */
+    transform: translateX(-50%); /* Сдвиг псевдоэлемента влево на 50% его ширины для центрирования */
+    z-index: -1; /* Помещаем псевдоэлемент за основным контентом формы */
+}
+
+form div {
+    margin-bottom: 15px; /* Отступ между полями формы */
+}
+
+form label {
+    display: block; /* Отображаем метки на отдельной строке */
+    margin-bottom: 5px; /* Отступ под меткой */
+    font-size: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Ширина полей 100% контейнера */
+    padding: 10px; /* Внутренние отступы поля */
+    border: 1px black;
+    border-radius: 4px; /* Закругленные углы */
+    box-sizing: border-box; /* Учитываем отступы и обводку в ширине */
+}
+
+/* Стиль для кнопки отправки */
+form input[type="submit"] {
+    background-color: #e9967a; 
+    color: black; 
+    border: none; /* Убираем обводку */
+    padding: 12px 20px; /* Внутренние отступы увеличены для более крупного вида */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 16px; /* Увеличенный размер шрифта */
+    display: block; /* Чтобы button стал блочным элементом */
+    margin: 0 auto; /* Центрируем кнопку */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #59351F; /* Изменение цвета при наведении */
+    color: white; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Тень кнопки при наведении */
 }
